@@ -85,8 +85,3 @@ resource "aws_instance" "ec2-tf" {
     Name = "HelloWorld"
   }
 }
-
-
-output "web-address" {
-  value = "${aws_instance.web.public_dns}:8080"
-}
