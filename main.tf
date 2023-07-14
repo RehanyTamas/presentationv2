@@ -10,13 +10,6 @@ terraform {
     }
   }
   required_version = ">= 1.1.0"
-
-backend "s3" {
-    bucket         = "presentationbackendtamasorg"
-    key            = "terraform.tfstate"
-    region         = "eu-west-2"
-    dynamodb_table = "terraform_state"
-  }
 }
 
 provider "aws" {
