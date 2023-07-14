@@ -61,7 +61,7 @@ resource "aws_security_group" "rt-tf-sg" {
   from_port   = 22  # SSH client port is not a fixed port
   to_port     = 22
   protocol    = "tcp"
-  cidr_blocks      = ["217.65.104.98/32", "86.59.203.193"]
+  cidr_blocks      = ["217.65.104.98/32", "86.59.203.193/32"]
 }
 
   egress {
