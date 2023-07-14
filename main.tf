@@ -12,9 +12,9 @@ terraform {
   required_version = ">= 1.1.0"
 
 backend "s3" {
-    bucket         = "angelo-terraform-state-backend"
+    bucket         = "presentationbackendtamasorg"
     key            = "terraform.tfstate"
-    region         = "eu-west-1"
+    region         = "eu-west-2"
     dynamodb_table = "terraform_state"
   }
 }
